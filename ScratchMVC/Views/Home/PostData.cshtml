@@ -1,0 +1,21 @@
+﻿@model ScratchMVC.Models.PostDataViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PostData</title>
+</head>
+<body>
+    <div>
+        <h1>Hey you posted something!</h1> 
+        <strong>Username: </strong>@Model.Name
+        <strong>Password: </strong>@Model.Password
+    </div>
+</body>
+</html>

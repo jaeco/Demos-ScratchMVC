@@ -12,10 +12,16 @@
 </head>
 <body>
     <div> 
-        @for(int i =1; i <11; i++)
-        {
-            <h2>@i</h2>
-        }
+        #User Input:  Text fields / forms and submit button
+        <form method="post" action="~/Home/PostData">
+            <strong>Username:</strong>
+            <input type="text" name="name" />
+            <br />
+            <strong>Password:</strong>
+            <input type="password" name="password" />
+            <br />
+            <input type="submit" value="Pick this one!" />
+        </form>
     </div>
 </body>
 </html>

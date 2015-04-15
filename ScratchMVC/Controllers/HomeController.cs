@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ScratchMVC.Models;
 
 namespace ScratchMVC.Controllers
 {
@@ -12,6 +13,12 @@ namespace ScratchMVC.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult PostData(PostDataViewModel model)
+        {
+            return View(model);
         }
     }
 }
