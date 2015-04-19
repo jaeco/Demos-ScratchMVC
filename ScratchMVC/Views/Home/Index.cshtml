@@ -1,4 +1,5 @@
-﻿
+﻿@model int
+
 @{
     Layout = null;
 }
@@ -8,17 +9,20 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Styles/main.css" />
     <title>Index</title>
 </head>
 <body>
     <div> 
         #User Input:  Text fields / forms and submit button
-        <form method="post" action="~/Home/PostData">
+        <form method="post" action="~/Home/PostData/@Model">
             <strong>Username:</strong>
             <input type="text" name="name" />
             <br />
             <strong>Password:</strong>
             <input type="password" name="password" />
+            <br />
+            <!--<input type="hidden" name="id" value="@Model" /> -->
             <br />
             <input type="submit" value="Pick this one!" />
         </form>
